@@ -1,6 +1,8 @@
 # DoS Environment Simulation
 In this repository, I will introduce the most simple DoS simulation using Docker. For the victim server, we use nginx web server. We will check that web server received huge requests. In aditional, we also check the malicious packets which sent from the attacker. If we modify approprialye, we can fit to the paticluar virtual networking environment. (For instance, it is possible to change the CPU capability when we create the cotainer.) This project is mainly for observing the DoS attack packets.
 
+Using Docker is not enogh to create the DoS testbed. There are lots of things we cannot observe. Please use KVM for more.
+
 ![ss](images/dos_overview.png "overview")
 
 ## Environmnet (Tested Environment)
@@ -92,7 +94,7 @@ After finishing, please close the containers and stop the services.
 docker stop
 ```
 ## Acknowledgement
-Thank you verymuch for the communities. 
+Thank you very much for the communities. 
 
 ## References
 1. Hping3, https://www.kali.org/tools/hping3/
